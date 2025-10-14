@@ -12,7 +12,7 @@ layout: default
         <div class="container">
             <h1 class="hero-title">{{ site.theme_settings.hero_title }}</h1>
             <p class="hero-subtitle">{{ site.theme_settings.hero_subtitle }}</p>
-            <a href="{{ '/archive' | relative_url }}" class="hero-button">Explore Stories</a>
+            <a href="{{ '/archive' | relative_url }}" class="hero-button">走～一起去探索！</a>
         </div>
     </div>
 </section>
@@ -31,7 +31,7 @@ layout: default
                 {% endif %}
                 <div class="article-content">
                     <div class="article-meta">
-                        <span class="article-date">{{ post.date | date: '%B %d, %Y' }}</span>
+                        <span class="article-date">{{ post.date | date: '%Y-%m-%d, ' }}</span>
                         {% if post.category %}
                         <span class="article-category">{{ post.category }}</span>
                         {% endif %}
@@ -40,24 +40,10 @@ layout: default
                         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                     </h3>
                     <p class="article-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
-                    <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
+                    <a href="{{ post.url | relative_url }}"><span class="article-category">阅读全文</span></a>
                 </div>
             </article>
             {% endfor %}
-        </div>
-    </div>
-</section>
-
-<!-- Newsletter Section -->
-<section class="newsletter">
-    <div class="container">
-        <div class="newsletter-content">
-            <h2>Stay Updated</h2>
-            <p>Get the latest stories delivered to your inbox</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
         </div>
     </div>
 </section>
