@@ -1,0 +1,77 @@
+# Site settings
+title: Geographic Journal
+description: A Jekyll theme inspired by geographic magazines
+baseurl: ""
+url: "https://yourusername.github.io"
+author: Your Name
+email: your.email@example.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Pagination
+paginate: 6
+paginate_path: "/page/:num/"
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:name/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# Theme settings
+theme_settings:
+  # Color scheme
+  primary_color: "#ffcc00"
+  text_color: "#333333"
+  background_color: "#ffffff"
+  
+  # Typography
+  heading_font: "Playfair Display, serif"
+  body_font: "Source Sans Pro, sans-serif"
+  
+  # Hero section
+  hero_title: "Exploring the World"
+  hero_subtitle: "Stories from every corner of our planet"
+  hero_image: "/assets/images/hero-bg.jpg"
+  
+  # Social links
+  social:
+    github: ""
+    twitter: ""
+    instagram: ""
+    email: ""
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"

@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<article class="post">
+    <!-- Post Header -->
+    <header class="post-header">
+        <div class="container">
+            {% if page.featured_image %}
+            <div class="post-featured-image">
+                <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title }}">
+            </div>
+            {% endif %}
+            <div class="post-meta">
+                <span class="post-date">{{ page.date | date: '%B %d, %Y' }}</span>
+                {% if page.category %}
+                <span class="post-category">{{ page.category }}</span>
+                {% endif %}
+                {% if page.author %}
+                <span class="post-author">By {{ page.author }}</span>
+                {% endif %}
+            </div>
+            <h1 class="post-title">{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <p class="post-subtitle">{{ page.subtitle }}</p>
+            {% endif %}
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <div class="post-content">
+        <div class="container">
+            <div class="post-body">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Navigation -->
+    <nav class="post-navigation">
+        <div class="container">
+            {% if page.previous.url %}
+            <div class="nav-previous">
+                <a href="{{ page.previous.url | relative_url }}">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">{{ page.previous.title }}</span>
+                </a>
+            </div>
+            {% endif %}
+            {% if page.next.url %}
+            <div class="nav-next">
+                <a href="{{ page.next.url | relative_url }}">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">{{ page.next.title }}</span>
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </nav>
+</article>
