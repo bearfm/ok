@@ -15,10 +15,9 @@ permalink: /archive/
         <div class="filter-section">
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">All Stories</button>
-                <button class="filter-btn" data-filter="Adventure">Adventure</button>
-                <button class="filter-btn" data-filter="Environment">Environment</button>
-                <button class="filter-btn" data-filter="Climate">Climate</button>
-                <button class="filter-btn" data-filter="Culture">Culture</button>
+                <button class="filter-btn" data-filter="explore">Explore</button>
+                <button class="filter-btn" data-filter="travelogue">Travelogue</button>
+                <button class="filter-btn" data-filter="notepad">Notepad</button>
             </div>
         </div>
 
