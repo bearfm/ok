@@ -13,8 +13,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Styles -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     
@@ -32,6 +32,8 @@
                 <a href="{{ '/' | relative_url }}">Home</a>
                 <a href="{{ '/about' | relative_url }}">About</a>
                 <a href="{{ '/archive' | relative_url }}">Archive</a>
+				<a href="{{ '/friend' | relative_url }}">Friend</a>
+				<a href="javascript:switchNightMode()" class="menu-link at-night" target="_self"><i class="fa-solid fa-circle-half-stroke"></i></a>
             </div>
         </div>
     </nav>
@@ -46,8 +48,21 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>{{ site.title }}</h3>
+                    <h4>{{ site.title }}</h4>
                     <p>{{ site.description }}</p>
+					<h4>Connect</h4>
+                    {% if site.theme_settings.social.github %}
+                        <a href="https://github.com/{{ site.theme_settings.social.github }}"><i class="fa-brands fa-github"></i></a>
+                    {% endif %}
+                    {% if site.theme_settings.social.twitter %}
+                        <a href="https://mastodon.social/@bearcat"><i class="fa-brands fa-mastodon"></i></a>
+                    {% endif %}
+                    {% if site.theme_settings.social.instagram %}
+                        <a href="{{ '/feed.xml' | relative_url }}"><i class="fa-solid fa-square-rss"></i></a>
+                    {% endif %}
+                    {% if site.theme_settings.social.email %}
+                        <a href="mailto:{{ site.theme_settings.social.email }}"><i class="fa-solid fa-envelope"></i></a>
+                    {% endif %}
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -81,5 +96,37 @@
 
     <!-- Scripts -->
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+	<script type="text/javascript">
+		function switchNightMode(){
+			var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+			if(night == '0'){
+				document.body.classList.add('night');
+				document.cookie = "night=1;path=/"
+				console.log('夜间模式开启');
+			}else{
+				document.body.classList.remove('night');
+				document.cookie = "night=0;path=/"
+				console.log('夜间模式关闭');
+			}
+		} (function(){
+			if(document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") === ''){
+				if(new Date().getHours() > 21 || new Date().getHours() < 5){
+					document.body.classList.add('night');
+					document.cookie = "night=1;path=/";
+					console.log('夜间模式自动开启');
+				}else{
+					document.body.classList.remove('night');
+					document.cookie = "night=0;path=/";
+					console.log('夜间模式自动关闭');
+				}
+			}else{
+				var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
+				if(night == '0'){
+					document.body.classList.remove('night');
+				}else if(night == '1'){
+					document.body.classList.add('night');
+				}
+			}
+		})();</script>
 </body>
 </html>
