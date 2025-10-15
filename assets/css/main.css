@@ -14,18 +14,7 @@ a{color:#fc0;text-decoration:none;transition:color .3s ease}
 a:hover{color:#e6b800}
 .navbar{position:fixed;top:0;left:0;right:0;background-color:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:3px solid #fc0;z-index:1000;padding:1rem 0}
 .navbar .container{display:flex;justify-content:space-between;align-items:center}
-.nav-brand a{font-family:'ji','wugeng',serif;font-size:1.5rem;font-weight:900;color:#333;letter-spacing: -1px;}
-.nav-logo{width:35px;height:35px;box-sizing:border-box;mix-blend-mode:darken;display:grid;float:left;margin-top:5px;margin-left:-1.8rem;margin-right:1rem}
-.nav-logo:after,.nav-logo:before{content:"";grid-area:1/1;animation:l2 12s infinite linear;background:#fc0;border-radius:50%}
-.nav-logo:after{animation-delay:-3s}
-@keyframes l2{12.5%{border-radius:37% 63% 70% 30%/30% 62% 38% 70%}
-25%{border-radius:84% 16% 15% 85%/55% 79% 21% 45%}
-37.5%{border-radius:73% 27% 74% 26%/64% 32% 68% 36%}
-50%{border-radius:73% 27% 18% 82%/52% 32% 68% 48%}
-62.5%{border-radius:33% 67% 18% 82%/52% 75% 25% 48%}
-75%{border-radius:12% 88% 69% 31%/10% 66% 34% 90%}
-87.5%{border-radius:50% 50% 70% 30%/52% 62% 38% 48%}
-}
+.nav-brand a{font-family:'ji','wugeng',serif;font-size:1.5rem;font-weight:400;color:#333}
 .nav-menu{display:flex;gap:2rem}
 .nav-menu a{color:#333;font-weight:600;transition:color .3s ease}
 .nav-menu a:hover{color:#fc0}
