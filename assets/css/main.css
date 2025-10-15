@@ -109,3 +109,4 @@ body.night,body.night a,body.night .article-excerpt,body.night .section-title,bo
 body.night .navbar,body.night footer{background-color:#252627}
 body.night .featured-articles,body.night .page-content,body.night .post-content{background-color:#2f2f2f}
 body.night .article-card,body.night .page-header,body.night .archive-card,body.night .post-header,body.night .post-navigation{background-color:#3b3d42}
+body.night blockquote::before{background-color:#3b3d42;color:#d5d5d5}
