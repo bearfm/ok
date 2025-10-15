@@ -18,17 +18,9 @@ a:hover{color:#e6b800}
 .nav-menu{display:flex;gap:2rem}
 .nav-menu a{color:#333;font-weight:600;transition:color .3s ease}
 .nav-menu a:hover{color:#fc0}
-.logo{width:35px;height:35px;box-sizing:border-box;mix-blend-mode:darken;display:grid;float:left;margin-top:5px;margin-left:-1.8rem;margin-right:1rem}
-.logo:after,.logo:before{content:"";grid-area:1/1;animation:l2 12s infinite linear;background:#fc0;border-radius:50%}
-.logo:after{animation-delay:-3s}
-@keyframes l2{12.5%{border-radius:37% 63% 70% 30%/30% 62% 38% 70%}
-25%{border-radius:84% 16% 15% 85%/55% 79% 21% 45%}
-37.5%{border-radius:73% 27% 74% 26%/64% 32% 68% 36%}
-50%{border-radius:73% 27% 18% 82%/52% 32% 68% 48%}
-62.5%{border-radius:33% 67% 18% 82%/52% 75% 25% 48%}
-75%{border-radius:12% 88% 69% 31%/10% 66% 34% 90%}
-87.5%{border-radius:50% 50% 70% 30%/52% 62% 38% 48%}
-}
+.logo{width:35;height:35;border-radius:50%;overflow:hidden;display:inline-block;float:left;margin-right:1rem;background:linear-gradient(to bottom,var(--black) 0 calc(var(--stripe-percent) * 1),var(--yellow) calc(var(--stripe-percent) * 1) calc(var(--stripe-percent) * 2),var(--black) calc(var(--stripe-percent) * 2) calc(var(--stripe-percent) * 3),var(--yellow) calc(var(--stripe-percent) * 3) calc(var(--stripe-percent) * 4),var(--black) calc(var(--stripe-percent) * 4) 100%);box-shadow:inset 0 18px 40px rgba(0,0,0,.35),inset 0 -8px 18px rgba(255,255,255,.06),0 6px 20px rgba(0,0,0,.12);position:relative}
+.logo::before{content:"";position:absolute;left:-10%;top:-30%;width:120%;height:70%;border-radius:50%;background:radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.45),rgba(255,255,255,.12) 10%,transparent 30%);pointer-events:none;mix-blend-mode:screen;opacity:.9}
+.logo::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 50% 45%,rgba(0,0,0,.06),transparent 30%),radial-gradient(circle at 50% 60%,rgba(255,255,255,.04),transparent 40%);pointer-events:none;mix-blend-mode:overlay}
 .hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
 .hero-background{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-2}
 .hero-background img{width:100%;height:100%;object-fit:cover}
