@@ -101,6 +101,8 @@ a:hover{color:#e6b800}
 .post-title{font-size:1.5rem}
 .post-meta{flex-direction:column;gap:.5rem}
 }
-body.night{background-color:#3b3d42;color:#f5f5f5}
-body.night a{color:#f5f5f5}
+body.night,body.night a,body.night .article-excerpt,body.night .section-title{color:#f5f5f5}
 body.night blockquote::before{background-color:#3b3d42;color:#d5d5d5}
+body.night .navbar,body.night footer{background-color:#252627}
+body.night .featured-articles{background-color:#2f2f2f}
+body.night .article-card{background-color:#3b3d42}
