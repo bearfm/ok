@@ -39,9 +39,6 @@ permalink: /archive/
                     <h3 class="archive-title">
                         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                     </h3>
-                    {% if post.subtitle %}
-                    <p class="archive-subtitle">{{ post.subtitle }}</p>
-                    {% endif %}
                     <p class="archive-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
                     <a href="{{ post.url | relative_url }}" class="archive-read-more">Read More</a>
                 </div>
