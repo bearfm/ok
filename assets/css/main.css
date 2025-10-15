@@ -103,5 +103,5 @@ a:hover{color:#e6b800}
 }
 body.night,body.night a,body.night .article-excerpt,body.night .section-title,body.night .archive-subtitle,body.night .archive-subtitle,body.night .post-body h2{color:#f5f5f5}
 body.night .navbar,body.night footer{background-color:#252627}
-body.night .featured-articles,body.night .page-content{background-color:#2f2f2f}
+body.night .featured-articles,body.night .page-content,body.night .post-content{background-color:#2f2f2f}
 body.night .article-card,body.night .page-header,body.night .archive-card,body.night .post-header{background-color:#3b3d42}
