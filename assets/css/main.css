@@ -18,8 +18,8 @@ a:hover{color:#e6b800}
 .nav-menu{display:flex;gap:2rem}
 .nav-menu a{color:#333;font-weight:600;transition:color .3s ease}
 .nav-menu a:hover{color:#fc0}
-.loader{--s:25px;--_d:calc(0.353*var(--s));width:calc(var(--s) + var(--_d));aspect-ratio:1;display:flex}
-.loader:after,.loader:before{content:"";flex:1;clip-path:polygon(var(--_d) 0,100% 0,100% calc(100% - var(--_d)),calc(100% - var(--_d)) 100%,0 100%,0 var(--_d));background:conic-gradient(from -90deg at calc(100% - var(--_d)) var(--_d),#fff 135deg,#666 0 270deg,#aaa 0);animation:l5 1.2s infinite}
+.loader{--s:25px;--_d:calc(0.353*var(--s));width:calc(var(--s) + var(--_d));aspect-ratio:1;display:flex;float:left;margin-right:10px}
+.loader:after,.loader:before{content:"";flex:1;clip-path:polygon(var(--_d) 0,100% 0,100% calc(100% - var(--_d)),calc(100% - var(--_d)) 100%,0 100%,0 var(--_d));background:conic-gradient(from -90deg at calc(100% - var(--_d)) var(--_d),#fff 135deg,#fc0 0 270deg,#be9700 0);animation:l5 6s infinite}
 .loader:before{margin-right:calc(var(--_d)/ -2 - 1px)}
 .loader:after{margin-left:calc(var(--_d)/ -2 - 1px);animation-delay:.6s}
 @keyframes l5{0%{transform:translateY(0)}
