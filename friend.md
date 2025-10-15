@@ -15,6 +15,8 @@ permalink: /friend/
 
 致敬每一个还在坚持创作的你。
 
+> 以下是我的好朋友们
+
 * ![非理勿试](https://gravatar.loli.net/avatar/f8a24e0c241bbc8a305930448f727397)  [非理勿试](https://www.ntiy.com/?from=5geng.com "非理勿试"){:target="_blank"}
 * ![漫漫长路](https://gravatar.loli.net/avatar/266f4e43085a64e60fa241d350037a05)  [漫漫长路](https://6.mr/?from=5geng.com "漫漫长路"){:target="_blank"}
 * ![印记](https://gravatar.loli.net/avatar/e0c9b701821e8219b15b261a7edd48859c86406a50563758d7e16440d1581c27)  [印记](https://yinji.org/?from=5geng.com "印记"){:target="_blank"}
@@ -26,7 +28,7 @@ permalink: /friend/
 
 <style>
 .page-body ul{margin:0 auto}
-.page-body li{padding:10px 15px;width:135px;margin:0 5px 12px;box-sizing:border-box;display:inline-block;vertical-align:top;background:#fafafa;border-radius:4px}
+.page-body li{padding:10px 15px;width:135px;margin:12px;box-sizing:border-box;display:inline-block;vertical-align:top;background:#fafafa;border-radius:4px}
 .page-body li img{border-radius:4px;float:left;width:32px;height:32px;margin:0;background:#fff}
 .page-body li a{display:block;color:#666;padding:0 10px;word-break:keep-all;overflow:hidden;border-bottom:none;text-decoration:none}
 @media only screen and (max-width:683px){.page-body li{width:144px;margin:0 0 8px}
