@@ -114,4 +114,4 @@ body.night .navbar,body.night footer{background-color:#252627}
 body.night .featured-articles,body.night .page-content,body.night .post-content{background-color:#2f2f2f}
 body.night .article-card,body.night .page-header,body.night .archive-card,body.night .post-header,body.night .post-navigation{background-color:#3b3d42}
 body.night blockquote::before{background-color:#2f2f2f;color:#d5d5d5}
-body.night .logo{background:linear-gradient(to bottom,#3b3d42 0 20%,#fc0 20% 40%,#3b3d42 40% 60%,#fc0 60% 80%,#3b3d42 80% 100%)}
+body.night .logo{background:linear-gradient(to bottom,#3b3d42 0 20%,#fc0 20% 40%,#3b3d42 40% 60%,#fc0 60% 80%,#3b3d42 80% 100%);box-shadow:none}
