@@ -5,7 +5,7 @@ subtitle: "每一个链接，都是一个故事"
 permalink: /friend/
 ---
 
-![about](https://fm.bear.hi.cn/files/friend.jpg)
+![friend](https://fm.bear.hi.cn/files/friend.jpg)
 
 > 在这个星球上有80亿人<br />最好的你，是不重复别人的自己
 
@@ -27,6 +27,7 @@ permalink: /friend/
 * ![老何](https://gravatar.loli.net/avatar/d07ff632a5fa1256a69d92e1f9e38ce8)  [老何](https://www.mrhe.net/?from=5geng.com "老何"){:target="_blank"}
 
 <style>
+.page-body img{max-width:100%;height:auto;border-radius:10px;margin:2rem 0;box-shadow:0 5px 15px rgba(0,0,0,.1)}
 .page-body ul{margin:0 auto}
 .page-body li{padding:10px 15px;width:135px;margin:12px;box-sizing:border-box;display:inline-block;vertical-align:top;background:#fafafa;border-radius:4px}
 .page-body li img{border-radius:4px;float:left;width:32px;height:32px;margin:0;background:#fff}

@@ -20,3 +20,8 @@ permalink: /about/
 于五更动身，探世界之光。我记录山河路上的个人感悟，也解读风景背后的科学密码。在黑暗与光明的交界处，发现世界。我期待借助照片的色彩，加上文字的描述，为某一段走出去的旅程留下一点纪念。我相信，每一张照片、每一段文字、每一秒时光，以及每一寸土地都有着不同的解读，就像每一张平静的面孔背后，都有一个鲜为人知的故事。
 
 关于未来的路，我们充满期待！
+
+<style>
+.page-body img{max-width:100%;height:auto;border-radius:10px;margin:2rem 0;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+.likebutton{display:inline-block;width:22%;height:40px;border-radius:5px;color:#fff;font-size:1.3em;line-height:40px;text-align:center;position:relative;margin-right:calc(4%/3);transition:.2s linear}
+</style>
