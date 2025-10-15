@@ -27,9 +27,10 @@ permalink: /friend/
 <style>
 .page-body ul{margin:0 auto}
 .page-body li{padding:10px 15px;width:135px;margin:0 5px 12px;box-sizing:border-box;display:inline-block;vertical-align:top;background:#fafafa;border-radius:4px}
-.page-body li img{border-radius:4px;float:left;width:32px;height:32px;margin-top:0;background:#fff}
-.page-body li a{display:block;padding:0 10px;margin-top:7px;word-break:keep-all;overflow:hidden;border-bottom:none;text-decoration:none}
+.page-body li img{border-radius:4px;float:left;width:32px;height:32px;margin:0;background:#fff}
+.page-body li a{display:block;color:#666;padding:0 10px;word-break:keep-all;overflow:hidden;border-bottom:none;text-decoration:none}
 @media only screen and (max-width:683px){.page-body li{width:144px;margin:0 0 8px}
 }
 body.night .page-body li{background:#252627}
+body.night .page-body li a{color:#f5f5f5}
 </style>
