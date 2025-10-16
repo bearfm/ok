@@ -9,15 +9,17 @@
     
     <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    
+    <meta name="apple-mobile-web-app-title" content="五更记" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://google-fonts.mirrors.sjtug.sjtu.edu.cn/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Styles -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    
+    <link rel="icon" type="image/png" href="https://fm.bear.hi.cn/blog/v5f/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="https://fm.bear.hi.cn/blog/v5f/favicon.svg" />
+	<link rel="shortcut icon" href="/v5f/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="https://fm.bear.hi.cn/blog/v5f/apple-touch-icon.png" />
+	<link rel="manifest" href="https://fm.bear.hi.cn/blog/v5f/site.webmanifest" />
     <!-- Feed -->
     {% feed_meta %}
 </head>
@@ -53,7 +55,7 @@
 					<h4>Connect</h4>
                     {% if site.theme_settings.social.github %}
                         <a href="https://github.com/{{ site.theme_settings.social.github }}"><i class="fa-brands fa-github"></i></a>
-                    {% endif %}
+    Ω                {% endif %}
                     {% if site.theme_settings.social.twitter %}
                         <a href="https://mastodon.social/@bearcat"><i class="fa-brands fa-mastodon"></i></a>
                     {% endif %}
