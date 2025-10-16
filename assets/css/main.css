@@ -45,8 +45,6 @@ a:hover{color:#e6b800}
 .article-title a{color:#333;transition:color .3s ease}
 .article-title a:hover{color:#fc0}
 .article-excerpt{color:#666;margin-bottom:1rem;line-height:1.5}
-.read-more{color:#fc0;font-weight:600;text-transform:uppercase;font-size:.9rem;letter-spacing:.5px}
-.read-more:hover{color:#e6b800}
 .newsletter{background-color:#333;color:#fff;padding:60px 0;text-align:center}
 .newsletter-content h2{font-size:2.5rem;margin-bottom:1rem}
 .newsletter-content p{font-size:1.2rem;margin-bottom:2rem;opacity:.9}
@@ -68,7 +66,7 @@ a:hover{color:#e6b800}
 .post-body p{margin-bottom:1.5rem}
 .post-body blockquote{border-left:4px solid #fc0;padding-left:2rem;margin:2rem 0;font-style:italic;font-size:1.2rem;color:#666}
 .post-body img{max-width:100%;height:auto;border-radius:10px;margin:2rem 0;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-.post-body small{display:block;color:#9a9a9a;font-size:.8rem;text-align:center}
+.post-body small{display:block;color:#9a9a9a;font-size:.7rem;text-align:center;margin-top:-2rem}
 .post-body small::before{content:'▲';display:inline-block;margin-right:8px;color:#fd0}
 .post-navigation{background-color:#f8f8f8;padding:40px 0;border-top:1px solid #e0e0e0}
 .post-navigation .container{display:flex;justify-content:space-between;align-items:center;gap:2rem}
