@@ -258,6 +258,14 @@ const additionalStyles = `
         .nav-menu.active {
             display: flex;
         }
+		
+		body.night .mobile-menu-toggle {
+			color: #f5f5f5;
+		}
+		
+		body.night .nav-menu {
+			background-color: #3b3d42;
+		}
     }
 `;
 
