@@ -9,7 +9,7 @@ email: your.email@example.com
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:year/:month/:day/:title/
+permalink: /:title.html
 
 # Pagination
 paginate: 6
@@ -58,10 +58,10 @@ theme_settings:
   
   # Social links
   social:
-    github: ""
+    github: "bearfm"
     twitter: ""
     instagram: ""
-    email: ""
+    email: "hello@z.org"
 
 # Defaults
 defaults:
