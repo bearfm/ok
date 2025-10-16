@@ -66,7 +66,7 @@ a:hover{color:#e6b800}
 .post-body small{display:block;color:#9a9a9a;font-size:.7rem;text-align:center;margin-top:-2rem}
 .post-body small::before{content:'▲';display:inline-block;margin-right:8px;color:#fd0}
 .post-body cite{font-size:.7rem;font-style:italic}
-.post-body p:has(>img:nth-child(2)){column-count:2;column-gap:8px;margin:6px 0}
+.post-body p:has(>img:nth-child(2)){column-count:2;column-gap:8px;max-width:95%;margin:6px 0}
 .post-body p:has(>img:nth-child(3)){column-count:3}
 .post-body p:has(>img:nth-child(4)){column-count:4}
 .post-body p:has(>img:nth-child(5)){column-count:5}
