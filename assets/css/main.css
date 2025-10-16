@@ -68,6 +68,8 @@ a:hover{color:#e6b800}
 .post-body p{margin-bottom:1.5rem}
 .post-body blockquote{border-left:4px solid #fc0;padding-left:2rem;margin:2rem 0;font-style:italic;font-size:1.2rem;color:#666}
 .post-body img{max-width:100%;height:auto;border-radius:10px;margin:2rem 0;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+.post-body small{display:block;color:#9a9a9a;font-size:.8rem;text-align:center}
+.post-body small::before{content:'▲';display:inline-block;margin-right:8px;color:#fd0}
 .post-navigation{background-color:#f8f8f8;padding:40px 0;border-top:1px solid #e0e0e0}
 .post-navigation .container{display:flex;justify-content:space-between;align-items:center;gap:2rem}
 .nav-next,.nav-previous{flex:1}
